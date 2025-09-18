@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tradukti Allgäu</title>
+
+    <!-- Entferne die drei Google-Fonts-Zeilen -->
+<link rel="stylesheet" href="assets/css/fonts.css">
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: { sans: ['Raleway','ui-sans-serif','system-ui','sans-serif'] }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="assets/css/fonts.css">
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: { sans: ['Raleway','ui-sans-serif','system-ui','sans-serif'] }
+      }
+    }
+  }
+</script>
+ <style>
+      /* Hilfsstil für fixen Header-Offset (Höhe des Headers ~ 72px) */
+      :root { --header-h: 72px; }
+      main { padding-top: var(--header-h); }
+    </style>
+  </head>
+  <body class="font-sans antialiased text-slate-800 bg-white">
+     <!-- Fixer Header -->
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <div class="mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Links: Logo + Titel (Platzhalter) -->
+          <a href="/index.html" class="flex items-center gap-3 group" aria-label="Startseite">
+            <!-- Alpen Silhouette (responsive, currentColor) -->
+            <svg viewBox="0 0 64 24" aria-label="Alpen-Silhouette"
+                class="w-16 h-auto text-slate-900">
+              <path fill="currentColor" d="M2 20l9-9 5 5 6-8 8 10 4-4 10 10H2z" />
+            </svg>
+            <span class="text-lg sm:text-xl font-semibold tracking-tight group-hover:opacity-80 transition">Tradukti Allgäu</span>
+          </a>
+
+            <!-- Mittig: Prominenter Button -->
+            <button class="hidden md:block bg-blue-600 text-white px-6 py-2 rounded-md font-bold hover:bg-blue-700">
+                <a href="mailto:uebersetzung-kutter@web.de" class="underline">Übersetzung anfordern</a>
+            </button>
+
+            <!-- Rechts: Menü -->
+            <nav class="hidden md:flex space-x-4">
+                <a href="/index.html" class="text-gray-700 hover:text-blue-600">Start</a>
+                <a href="/index.html" class="text-gray-700 hover:text-blue-600">Über mich</a>
+                <a href="/index.html" class="text-gray-700 hover:text-blue-600">Leistungen</a>
+            </nav>
+
+            <!-- Mobile Menü: Hamburger Icon und Dropdown -->
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                    <!-- Hamburger Icon (Quelle: SVG von Heroicons, https://heroicons.com/) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <div id="mobile-menu" class="hidden absolute right-0 mt-2 bg-white shadow-md rounded-md p-4">
+                    <a href="/index.html" class="block text-gray-700 hover:text-blue-600 mb-2">Start</a>
+                    <a href="/index.html" class="block text-gray-700 hover:text-blue-600 mb-2">Über mich</a>
+                    <a href="/index.html" class="block text-gray-700 hover:text-blue-600 mb-2">Leistungen</a>
+                    <button class="block w-full bg-blue-600 text-white px-4 py-2 rounded-md font-bold hover:bg-blue-700 mt-2">
+                        Übersetzung anfordern
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+   <main>
+    <section id="impressum" class="bg-white">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Impressum</h2>
+    <p class="mt-4 text-slate-700 leading-relaxed">
+      Angaben gemäß § 5 DDG
+    </p>
+    <p class="mt-2">
+      Laura Kutter<br>
+      Eicher Ringweg 3<br>
+      87435 Kempten<br>
+    </p>
+    <p class="mt-4">
+      Telefon: 0172/ 5641770<br>
+      E-Mail: <a href="mailto:uebersetzung-kutter@web.de" class="underline">uebersetzung-kutter@web.de</a>
+    </p>
+  </div>
+</section>
+   </main>
+     <footer class="fixed inset-x-0 bottom-0 bg-gray-800 text-white py-4 mt-8">
+        <div class="mx-auto max-w-7xl px-4 flex flex-col md:flex-row justify-between items-center">
+            <!-- Links: Copyright -->
+            <div class="mb-4 md:mb-0">
+                <p>&copy; 2025 Laura Kutter. Alle Rechte vorbehalten.</p>
+            </div>
+
+            <!-- Mittig: Links zu Impressum und Datenschutz -->
+            <div class="mb-4 md:mb-0">
+                <a href="/impressum.html" class="text-white hover:underline mr-4">Impressum</a>
+                <a href="/datenschutz.html" class="text-white hover:underline">Datenschutzhinweise</a>
+            </div>
+
+            <!-- Rechts: Social-Media-Toggles (Icons als Links) -->
+            <div class="flex space-x-4">
+                <!-- LinkedIn Icon (Quelle: SVG von Font Awesome, https://fontawesome.com/) -->
+                <a href="www.linkedin.com/in/laura-kutter-595a22188/" class="text-white hover:text-blue-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0H8.014v16h4.966v-8.399c0-4.67 6.029-5.052 6.029 0V24H24V13.127c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+   
+</body>
+</html>
