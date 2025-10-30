@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tradukti Allgäu</title>
+
+    <!-- Entferne die drei Google-Fonts-Zeilen -->
+<link rel="stylesheet" href="assets/css/fonts.css">
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: { sans: ['Raleway','ui-sans-serif','system-ui','sans-serif'] }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="assets/css/fonts.css">
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: { sans: ['Raleway','ui-sans-serif','system-ui','sans-serif'] }
+      }
+    }
+  }
+</script>
+ <style>
+      /* Hilfsstil für fixen Header-Offset (Höhe des Headers ~ 72px) */
+      :root { --header-h: 72px; }
+      main { padding-top: var(--header-h); }
+    </style>
+  </head>
+  <body class="font-sans antialiased text-slate-800 bg-white">
+     <!-- Fixer Header -->
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <div class="mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Links: Logo + Titel (Platzhalter) -->
+          <a href="./index-de.html" class="flex items-center gap-3 group" aria-label="Startseite">
+            <!-- Alpen Silhouette (responsive, currentColor) -->
+            <svg viewBox="0 0 64 24" aria-label="Alpen-Silhouette"
+                class="w-16 h-auto text-slate-900">
+              <path fill="currentColor" d="M2 20l9-9 5 5 6-8 8 10 4-4 10 10H2z" />
+            </svg>
+            <span class="text-lg sm:text-xl font-semibold tracking-tight group-hover:opacity-80 transition">Tradukti Allgäu</span>
+          </a>
+
+            <!-- Mittig: Prominenter Button -->
+            <button class="hidden md:block bg-blue-600 text-white px-6 py-2 rounded-md font-bold hover:bg-blue-700">
+                <a href="mailto:uebersetzung-kutter@web.de" class="underline">Übersetzung anfordern</a>
+            </button>
+
+            <!-- Rechts: Menü -->
+            <nav class="hidden md:flex space-x-4">
+                <a href="./index-de.html" class="text-gray-700 hover:text-blue-600">Start</a>
+                <a href="./index-de.html" class="text-gray-700 hover:text-blue-600">Über mich</a>
+                <a href="./index-de.html" class="text-gray-700 hover:text-blue-600">Leistungen</a>
+            </nav>
+
+            <!-- Mobile Menü: Hamburger Icon und Dropdown -->
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                    <!-- Hamburger Icon (Quelle: SVG von Heroicons, https://heroicons.com/) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <div id="mobile-menu" class="hidden absolute right-0 mt-2 bg-white shadow-md rounded-md p-4">
+                    <a href="./index-de.html" class="block text-gray-700 hover:text-blue-600 mb-2">Start</a>
+                    <a href="./index-de.html" class="block text-gray-700 hover:text-blue-600 mb-2">Über mich</a>
+                    <a href="./index-de.html" class="block text-gray-700 hover:text-blue-600 mb-2">Leistungen</a>
+                    <button class="block w-full bg-blue-600 text-white px-4 py-2 rounded-md font-bold hover:bg-blue-700 mt-2">
+                        Übersetzung anfordern
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+   <main>
+    <section id="datenschutz" class="bg-white">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 mb-20">
+    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Datenschutzerklärung</h2>
+
+    <p class="mt-4 text-slate-700 leading-relaxed">
+      Diese Datenschutzerklärung informiert Sie darüber, welche personenbezogenen Daten beim Besuch dieser Website verarbeitet werden. 
+      Die Website wird rein informatorisch betrieben. Es werden keine Cookies gesetzt, keine Tracking-Tools eingesetzt und keine Daten über Formulare erhoben.
+    </p>
+
+    <h3 class="mt-8 text-xl font-semibold">Verantwortlicher</h3>
+    <p class="mt-2 text-slate-700 leading-relaxed">
+      Verantwortlich im Sinne der DSGVO ist:<br><br>
+      Laura Kutter<br>
+      Eicher Ringweg 3<br>
+      87435 Kempten<br>
+      E-Mail: <a href="uebersetzung-kutter@web.de" class="underline">uebersetzung-kutter@web.de</a>
+    </p>
+    <h3 class="mt-8 text-xl font-semibold">Hosting</h3>
+        <p class="mt-2 text-slate-700 leading-relaxed">
+        Diese Website wird über GitHub Pages (Anbieter: GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA) bereitgestellt. 
+        Beim Aufruf der Seiten werden automatisch Verbindungsdaten (z. B. IP-Adresse, Datum, Uhrzeit) verarbeitet, die für den technischen Betrieb erforderlich sind. 
+        Die Datenverarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer sicheren und effizienten Bereitstellung der Website).
+        </p>
+    <h3 class="mt-8 text-xl font-semibold">Server-Logs</h3>
+    <p class="mt-2 text-slate-700 leading-relaxed">
+      Beim Aufruf der Website überträgt Ihr Browser technisch bedingt Daten an den Server (z.&nbsp;B. IP-Adresse, Datum, Uhrzeit, aufgerufene Seite). 
+      Diese Logdaten werden ausschließlich zur Sicherstellung des Betriebs und zur Fehleranalyse genutzt und nach kurzer Zeit automatisch gelöscht. 
+      Eine Auswertung zu Marketing- oder Trackingzwecken erfolgt nicht.
+    </p>
+
+    <h3 class="mt-8 text-xl font-semibold">E-Mail-Kontakt</h3>
+    <p class="mt-2 text-slate-700 leading-relaxed">
+      Wenn Sie mich per E-Mail kontaktieren, werden die von Ihnen übermittelten Daten (z.&nbsp;B. Name, E-Mail-Adresse, Inhalt der Nachricht) ausschließlich zur Bearbeitung Ihrer Anfrage genutzt. 
+      Eine Weitergabe an Dritte erfolgt nicht.
+    </p>
+
+    <h3 class="mt-8 text-xl font-semibold">Content Delivery Network (CDN)</h3>
+    <p class="mt-2 text-slate-700 leading-relaxed">
+      Diese Website nutzt Tailwind CSS über ein Content Delivery Network (CDN) von Cloudflare. 
+      Beim Aufruf der Seiten werden technische Verbindungsdaten (z.&nbsp;B. IP-Adresse, Zeitpunkt des Abrufs) an die Server des Anbieters übermittelt. 
+      Die Nutzung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer schnellen und sicheren Bereitstellung der Website).
+    </p>
+
+    <h3 class="mt-8 text-xl font-semibold">Externe Links</h3>
+    <p class="mt-2 text-slate-700 leading-relaxed">
+      Diese Website enthält Links zu externen Anbietern (z.&nbsp;B. LinkedIn). 
+      Beim Anklicken dieser Links verlassen Sie meine Website. 
+      Für die Inhalte und die Verarbeitung personenbezogener Daten durch die Drittanbieter übernehme ich keine Verantwortung.
+    </p>
+
+    <h3 class="mt-8 text-xl font-semibold">Ihre Rechte</h3>
+    <p class="mt-2 text-slate-700 leading-relaxed">
+      Sie haben nach der DSGVO insbesondere das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch und Datenübertragbarkeit. 
+      Zudem haben Sie das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren.
+    </p>
+    <p class="mt-2 text-slate-700 leading-relaxed">Ich bin nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+    <div class="m-20"></div>
+    
+  </div>
+</section>
+
+   </main>
+     <footer class="fixed inset-x-0 bottom-0 bg-gray-800 text-white py-4 mt-8">
+        <div class="mx-auto max-w-7xl px-4 flex flex-col md:flex-row justify-between items-center">
+            <!-- Links: Copyright -->
+            <div class="mb-4 md:mb-0">
+                <p>&copy; 2025 Laura Kutter. Alle Rechte vorbehalten.</p>
+            </div>
+
+            <!-- Mittig: Links zu Impressum und Datenschutz -->
+            <div class="mb-4 md:mb-0">
+                <a href="../impressum-de.html" class="text-white hover:underline mr-4">Impressum</a>
+                <a href="./datenschutz-de.html" class="text-white hover:underline">Datenschutzhinweise</a>
+            </div>
+
+            <!-- Rechts: Social-Media-Toggles (Icons als Links) -->
+            <div class="flex space-x-4">
+                <!-- LinkedIn Icon (Quelle: SVG von Font Awesome, https://fontawesome.com/) -->
+                <a href="https://www.linkedin.com/in/laura-kutter-595a22188/" class="text-white hover:text-blue-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0H8.014v16h4.966v-8.399c0-4.67 6.029-5.052 6.029 0V24H24V13.127c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
